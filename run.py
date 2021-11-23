@@ -13,8 +13,34 @@ def get_word():
 def rungame():
     
     completion = False
+    letters = set(word)
     used_letters = []
     used_words = []
+    tires = 7
+    progress = "_" * len(word)
+
+    print("Let's play Hangman!")
+    print(hangman(tries))
+    print(word_completion)
+    print("\n")
+
+    while tries > 0 and not completion:
+        print("This word contains", len(word_lenght), "letters.") 
+        answer = input("Please guess a letter or word: \n").upper() 
+        if len(answer) == len(word) and answer.isalpha():
+            if  answer == word:
+                completion = True
+                progress = word       
+            elif answer in used_words:
+                print("You already used the word", answer)
+            else:
+               print(guess, "is not the word.")
+               tries -= 1
+               guessed_words.append(answer) 
+
+
+
+
 
 
 def hangman(tries):
