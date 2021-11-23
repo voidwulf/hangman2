@@ -439,3 +439,5 @@ word_list = [
     'hybrid',
     'buffet',
     'lively']
+
+# list of words imported from https://github.com/kiteco/python-youtube-code/tree/master/build-hangman-in-python
