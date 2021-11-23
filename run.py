@@ -6,6 +6,8 @@ from hangman_visual import stage # import hangman visual from hangman_visual.py
 def get_word():
     """
     function that retrives a random worl from list of words
+
+    return: string in capitals
     """
     word = random.choice(word_list)
     return word.upper()
@@ -54,8 +56,13 @@ def rungame():
         else:
             # warn user that the input is invalid
             print("Invalid guess. Please gues a letter or ", len(word), "letter word." )
-
-
+        print(hangman(tries))
+        print(progress)
+        print("\n")
+    if progress:
+        print("Congratulations, you guessed the word! You win!")
+    else:
+        print("Sorry, you ran out of tries. The word was " + word + ". Maybe next time!")
 
 
                 
