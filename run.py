@@ -10,6 +10,7 @@ def get_word():
     word = random.choice(word_list)
     return word.upper()
 
+#inspired by https://github.com/kiteco/python-youtube-code/tree/master/build-hangman-in-python and https://github.com/kying18/hangman/blob/master/hangman.py
 def rungame():
     
     completion = False
@@ -21,11 +22,11 @@ def rungame():
 
     print("Let's play Hangman!")
     print(hangman(tries))
-    print(word_completion)
+    print(progress)
     print("\n")
 
     while tries > 0 and not completion:
-        print("This word contains", len(word_lenght), "letters.") 
+        print("This word contains", len(word), "letters.") 
         answer = input("Please guess a letter or word: \n").upper() 
         if len(answer) == len(word) and answer.isalpha():
             if  answer == word:
@@ -36,7 +37,32 @@ def rungame():
             else:
                print(guess, "is not the word.")
                tries -= 1
-               guessed_words.append(answer) 
+               used_words.append(answer)
+        elif len(answer) == 1 and answer.isalpha():
+            if answer in used_letters:
+                print("You already used the letter", answer)
+            elif answer in letters:
+                print("Good job,", answer, "is in the word!")
+                used_letters.append(answer)
+                prog = list(progress)
+                indices = [i for i, letter in enumerate(word) if letter == answer]
+                for index in indices:
+                    prog[index] = answer
+                progress = "".join(prog)
+                if "_" not in progress:
+                    completion = True
+        else:
+            # warn user that the input is invalid
+            print("Invalid guess. Please gues a letter or ", len(word), "letter word." )
+
+
+
+
+                
+                
+                
+
+
 
 
 
