@@ -10,3 +10,22 @@ def get_word():
     word = random.choice(word_list)
     return word.upper()
 
+def rungame():
+    
+    completion = False
+    used_letters = []
+    used_words = []
+
+
+def hangman(tries):
+    
+    """
+    Function that creates visual based on how many tries
+    the user has left. Based on the remaining try, returnes
+    visual value from the list
+
+    return: stage visual as docstring
+    """
+
+    stage
+    return stage [tries]
