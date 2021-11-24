@@ -137,3 +137,9 @@ Deployed project:
 
 
 ## Cedits
+
+* Code Institute for Python essential template and deployment terminal
+* [Kite](https://www.youtube.com/watch?v=m4nEnsavl6w) and [Kylie Ying](https://www.youtube.com/watch?v=cJJTnI22IF8) for youtube tutorial on how to build a hangman
+* [Stackoverflow](https://stackoverflow.com/) for various answer on how to build a code and explanation on errors and warning during code validation
+* [Realpython](https://realpython.com/) on tips on how to document my code as well as other usefult tips for coding in Python
+* [Jack](https://github.com/iamjackwachira) my mentor for guidence during this project
