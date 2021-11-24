@@ -73,7 +73,7 @@ def rungame(word):
                 used_letters.append(answer)
         else:
             # warn user that the input is invalid
-            print("Invalid guess.Please gues a letter or word.")
+            print("Invalid guess.Please guess a letter or word.")
         print(hangman(tries))
         print(progress)
         print("\n")
