@@ -85,6 +85,12 @@ Visuals after fixing the code:
 
 ![use_python_tutor2](documentation/images/visuals1.JPG)
 
+* I had trouble after the deployment on Heroku to auto deploy my project due to accidently writing in requrements README.structure
+
+Autodeploy fail:
+
+![autodeploy_fail](heroku.JPG)
+
 ### Bugs remaining
 
 * No bugs remaining
@@ -115,7 +121,7 @@ Initial validation of hangman_visuals.py:
 
 Validation of hangman_visuals.py after fixing:
 
-![validation_hangman_visuals_code1](documentation/images/validation4.JPG)
+![validation_hangman_visuals_code2](documentation/images/validation4.JPG)
 
 
 ## Deployment
