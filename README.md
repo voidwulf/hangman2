@@ -120,6 +120,20 @@ Validation of hangman_visuals.py after fixing:
 
 ## Deployment
 
+This project was deployed using Code Institute's mock terminal for Heroku using the following steps:
+* Making sure if there were requirements needed updating before deployment as per Loves-sandwiches walkthrough project
+* Creating a new Heroku app
+* Setting build backs to Python and NodeJS in that order
+* Link the Heroku app to the repository
+* Clicking deploy and enabling auto-deploy
+
+Deploying project:
+
+![deploying project](documentation/images/deploy2.JPG)
+
+Deployed project:
+
+![deploying project](documentation/images/deploy2.JPG)
 
 
 ## Cedits
